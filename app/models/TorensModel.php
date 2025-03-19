@@ -15,6 +15,8 @@ class TorensModel
         $sql = 'SELECT  TORS.Naam
                         ,TORS.Locatie
                         ,TORS.Hoogte
+                        ,TORS.AantalVerdiepingen
+                        ,TORS.JaarVoltooid
 
                 FROM  Torens as TORS
                 

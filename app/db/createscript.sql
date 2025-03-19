@@ -321,14 +321,8 @@ CREATE TABLE Zangeres
     ,CONSTRAINT         PK_Zangeres_Id              PRIMARY KEY     CLUSTERED(Id)
 ) ENGINE=InnoDB;
 
--- Step: 13
--- *****************************************************************
--- Doel : Vul de tabel Zangeres met gegevens
--- *****************************************************************
--- Versie       Datum           Auteur              Omschrijving
--- ******       *****           ******              ************
--- 01           18-3-2025      Arjan de Ruijter     Vulling Zangeres
--- *****************************************************************
+
+
 
 INSERT INTO Zangeres
 (
@@ -348,3 +342,36 @@ VALUES
  ,('Taylor Swift', 570,'Verenigde Staten', '+13421 231356', 34, 1, NULL, SYSDATE(6), SYSDATE(6))
  ,('Beyoncé', 420,'Verenigde Staten', '+18723 213481', 41, 1, NULL, SYSDATE(6), SYSDATE(6))
  ,('Jennifer Lopez', 400,'Verenigde Staten', '+16254 751243', 54, 1, NULL, SYSDATE(6), SYSDATE(6));
+
+
+
+
+
+ CREATE TABLE Bucketlist
+(
+     Id                 SMALLINT        UNSIGNED    NOT NULL        AUTO_INCREMENT
+    ,Doel               VARCHAR(50)                 NOT NULL
+    ,Omschrijving       VARCHAR(100)                 NOT NULL
+    ,Land               VARCHAR(50)                NOT NULL
+    ,IsActief           BIT                         NOT NULL        DEFAULT 1
+    ,Opmerking          VARCHAR(255)                    NULL        DEFAULT NULL
+    ,DatumAangemaakt    DATETIME(6)                 NOT NULL
+    ,DatumGewijzigd     DATETIME(6)                 NOT NULL
+    ,CONSTRAINT         PK_Bucketlist_Id            PRIMARY KEY     CLUSTERED(Id)
+) ENGINE=InnoDB;
+
+
+
+INSERT INTO Bucketlist
+(
+      Doel
+     ,Omschrijving
+     ,Land
+     ,IsActief
+     ,Opmerking
+     ,DatumAangemaakt
+     ,DatumGewijzigd
+)
+VALUES
+  ('Vliegtuig springen', 'uit een vliegtuig springen van 1000m hoogte','Nederland',  1, NULL, SYSDATE(6), SYSDATE(6))
+ ,('Japan bezoeken', 'Een keertje in mijn leven op vakantie gaan in Japan','Japan',  1, NULL, SYSDATE(6), SYSDATE(6));

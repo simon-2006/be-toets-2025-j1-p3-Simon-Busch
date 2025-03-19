@@ -17,21 +17,17 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Naam</th>
-                        <th>Locatie</th>
-                        <th>Hoogte</th>
-                        <th>AantalVerdiepingen</th>
-                        <th>JaarVoltooid</th>
+                        <th>Doel</th>
+                        <th>Omschrijving</th>
+                        <th>Land</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($data['Torens'] as $Torens) : ?>
+                    <?php foreach($data['Bucketlist'] as $Bucketlist) : ?>
                         <tr>
-                            <td><?= $Torens->Naam; ?></td>
-                            <td><?= $Torens->Locatie; ?></td>
-                            <td><?= $Torens->Hoogte; ?></td>
-                            <td><?= $Torens->AantalVerdiepingen; ?></td>
-                            <td><?= $Torens->JaarVoltooid; ?></td>
+                            <td><?= $Bucketlist->Doel; ?></td>
+                            <td><?= $Bucketlist->Omschrijving; ?></td>
+                            <td><?= $Bucketlist->Land; ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

@@ -20,7 +20,9 @@
             
             <a href="<?= URLROOT; ?>/speakers/index">Overzicht Speakers</a> |
 
-            <a href="<?= URLROOT; ?>/zangeres/index">Overzicht Zangeres</a>
+            <a href="<?= URLROOT; ?>/zangeres/index">Overzicht Zangeres</a> |
+
+            <a href="<?= URLROOT; ?>/bucketlist/index">Overzicht Bucketlist</a>
 
         </div>
         
