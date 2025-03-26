@@ -5,7 +5,7 @@
     <div class="row">
 
         <div class="col-1"></div>
-        <div class="col-10">        
+        <div class="col-10 text-center text-danger">        
             <h3><?= $data['title']; ?></h3>
         </div>
         <div class="col-1"></div>

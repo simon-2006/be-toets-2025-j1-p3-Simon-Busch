@@ -20,7 +20,7 @@ class ZangeresModel
 
                 FROM  Zangeres as ZANG
                 
-                ORDER BY ZANG.Leeftijd DESC';
+                ORDER BY ZANG.Nettowaarde DESC';
 
         $this->db->query($sql);
 

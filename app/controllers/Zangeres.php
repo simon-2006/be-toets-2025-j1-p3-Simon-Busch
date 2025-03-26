@@ -20,7 +20,7 @@ class Zangeres extends BaseController
         * Het $data-array geeft informatie mee aan de view-pagina
         */
        $data = [
-            'title' => 'Overzicht Zangeres',
+            'title' => 'Top 5 Rijkste Zangeressen',
             'Zangeres' => $result
        ];
 

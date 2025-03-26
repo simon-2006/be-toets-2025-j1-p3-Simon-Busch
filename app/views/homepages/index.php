@@ -22,7 +22,9 @@
 
             <a href="<?= URLROOT; ?>/zangeres/index">Overzicht Zangeres</a> |
 
-            <a href="<?= URLROOT; ?>/bucketlist/index">Overzicht Bucketlist</a>
+            <a href="<?= URLROOT; ?>/bucketlist/index">Overzicht Bucketlist</a> |
+
+            <a href="<?= URLROOT; ?>/vulkaan/index">Actiefste Vulkaan</a>
 
         </div>
         
